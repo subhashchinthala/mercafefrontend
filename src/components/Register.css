@@ -1,0 +1,939 @@
+/* App Container */
+.App-Container {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  padding: 16px 0;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 16px rgba(99,102,241,0.12);
+  margin-bottom: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-nav a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.header-nav a:hover {
+  background: rgba(255,255,255,0.18);
+  transform: scale(1.08);
+}
+
+/* Card Style for Pages */
+.page-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(99,102,241,0.12);
+  padding: 40px 32px;
+  margin: 40px auto;
+  max-width: 420px;
+  width: 100%;
+  transition: box-shadow 0.3s;
+  animation: fadeIn 0.7s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.page-title {
+  color: #6366f1;
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Form Inputs and Buttons */
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.06);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 0 0 2px #6366f133;
+}
+
+button {
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.10);
+}
+
+button:hover {
+  background: linear-gradient(90deg, #60a5fa 0%, #6366f1 100%);
+  transform: scale(1.04);
+}
+
+/* Image Styling */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 2px 12px rgba(99,102,241,0.10);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 18px 0;
+  background: #f3f4f6;
+  color: #6366f1;
+  border-radius: 16px 16px 0 0;
+  margin-top: 40px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  box-shadow: 0 -2px 8px rgba(99,102,241,0.06);
+}
+
+
+/* Admin.css */
+
+.admin-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.admin-nav {
+  margin-bottom: 20px;
+}
+
+.admin-nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.admin-nav a:hover {
+  background-color: #ecf0f1;
+}
+
+.admin-content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+/* Cart.css */
+
+.cart-container {
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cart-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.cart-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item span {
+  flex: 1;
+}
+
+.cart-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-buttons button {
+  padding: 4px 10px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-buttons button:hover {
+  background-color: #2980b9;
+}
+
+.order-value {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.cart-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cart-actions button {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-actions button:hover {
+  background-color: #219150;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* Footer.css */
+
+.footer-container {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* Header.css */
+
+.header-container {
+  background-color: #34495e;
+  padding: 15px 30px;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #2c3e50;
+}
+/* Login.css */
+
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.login-container input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #27ae60;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.login-container button:hover {
+  background-color: #219150;
+}
+
+.login-container hr {
+  margin: 20px 0;
+}
+
+.login-container a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: 500;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+/* Order.css */
+
+.order-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.order-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.order-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.order-card p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.order-table th {
+  background-color: #34495e;
+  color: white;
+}
+
+.order-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Orders.css */
+
+.orders-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.orders-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.status-filter {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.status-filter select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.order-list {
+  list-style: none;
+  padding: 0;
+}
+
+.order-item {
+  background-color: #f8f9fa;
+  margin-bottom: 12px;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-info {
+  font-size: 14px;
+  margin-bottom: 8px;
+  flex: 1 1 60%;
+}
+
+.order-actions button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-actions button:first-child {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.order-actions button:last-child {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.order-actions button:hover {
+  opacity: 0.9;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  margin: 0 8px;
+  font-size: 14px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button[disabled] {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+/* Product.css */
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #2c3e50;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  font-size: 16px;
+  color: #27ae60;
+  margin: 8px 0;
+}
+
+.product-card button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #2980b9;
+}
+/* Products.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px auto;
+  justify-content: center;
+  padding: 10px;
+}
+
+form input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 200px;
+  font-size: 14px;
+}
+
+form button {
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  color: #555;
+}
+
+table td {
+  color: #333;
+}
+
+table button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+table button:nth-child(1) {
+  background-color: #f39c12;
+  color: white;
+}
+
+table button:nth-child(1):hover {
+  background-color: #d68910;
+}
+
+table button:nth-child(2) {
+  background-color: #e74c3c;
+  color: white;
+}
+
+table button:nth-child(2):hover {
+  background-color: #c0392b;
+}
+
+.pagination {
+  text-align: center;
+  margin: 20px;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 6px 14px;
+  font-size: 14px;
+}
+/* Profile.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.profile-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.profile-container h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-container input {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fafafa;
+}
+
+.profile-container input:focus {
+  outline: none;
+  border-color: #3498db;
+  background-color: #fff;
+}
+
+.profile-container button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.profile-container button:hover {
+  background-color: #2980b9;
+}
+
+.profile-container .logout-button {
+  background-color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.profile-container .logout-button:hover {
+  background-color: #c0392b;
+}
+
+.profile-container p {
+  margin: 0;
+}
+/* Register.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.App-Register-Row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App-Register-Row > div {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.App-Register-Row h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.App-Register-Row p {
+  margin: 10px 0;
+}
+
+.App-Register-Row input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s;
+}
+
+.App-Register-Row input:focus {
+  outline: none;
+  border-color: #3498db;
+  background-color: #fff;
+}
+
+.App-Register-Row button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #3498db;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.App-Register-Row button:hover {
+  background-color: #2980b9;
+}
+
+.App-Register-Row a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #2980b9;
+  font-size: 14px;
+}
+
+.App-Register-Row a:hover {
+  text-decoration: underline;
+}
+/* Users.css */
+
+.user-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.user-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.user-form,
+.user-search,
+.user-pagination {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.user-form input,
+.user-form select,
+.user-search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-width: 180px;
+  font-size: 14px;
+}
+
+.user-form button,
+.user-search button,
+.user-pagination button {
+  padding: 10px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.user-form button:hover,
+.user-search button:hover,
+.user-pagination button:hover {
+  background-color: #388e3c;
+}
+
+.user-form button:nth-child(2) {
+  background-color: #f44336;
+}
+
+.user-form button:nth-child(2):hover {
+  background-color: #d32f2f;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.user-table th {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.user-table button {
+  margin: 0 4px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.user-pagination {
+  text-align: center;
+  font-size: 16px;
+}

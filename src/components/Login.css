@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(-45deg, #0ea5e9, #9333ea, #14b8a6, #3b82f6);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.login-glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.login-glass h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.login-sub {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.login-glass input {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-glass input::placeholder {
+  color: #e2e8f0;
+}
+
+.login-glass input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+}
+
+.login-glass button {
+  padding: 12px;
+  background-color: #fff;
+  color: #0ea5e9;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-glass button:hover {
+  background-color: #f1f5f9;
+}
+
+.link-text {
+  font-size: 13px;
+  color: #e2e8f0;
+}
+
+.link-text a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.error-msg {
+  color: #f87171;
+  font-size: 14px;
+}

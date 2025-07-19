@@ -1,0 +1,87 @@
+.orders-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafc;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.orders-heading {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.status-dropdown {
+  padding: 8px 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.order-list {
+  list-style: none;
+  padding: 0;
+}
+
+.order-card {
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border-left: 5px solid #2d87f0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.order-card div {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.order-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.complete {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}

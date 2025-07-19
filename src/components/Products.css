@@ -1,0 +1,128 @@
+.product-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background: #fdfdfd;
+}
+
+.heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.error-msg {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.product-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1 1 200px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+.product-table th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: #2d87f0;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #1b6edc;
+}
+
+.btn.small {
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+.btn.edit {
+  background-color: #ffa500;
+}
+
+.btn.delete {
+  background-color: #f44336;
+}
+
+.btn.cancel {
+  background-color: #999;
+}
+
+.btn.update {
+  background-color: #4caf50;
+}
+
+.btn.search {
+  background-color: #1976d2;
+}

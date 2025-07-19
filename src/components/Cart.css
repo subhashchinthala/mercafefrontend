@@ -1,0 +1,150 @@
+/* Container for the entire cart */
+.cart-wrapper {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Cart Title */
+.cart-title {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #2b2d42;
+  letter-spacing: 1px;
+}
+
+/* Empty cart */
+.cart-empty {
+  text-align: center;
+  color: #555;
+}
+.cart-empty img {
+  width: 300px;
+  margin: 20px 0;
+}
+.cart-empty p {
+  font-size: 18px;
+}
+.cart-empty button {
+  background-color: #6366f1;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.cart-empty button:hover {
+  background-color: #4f46e5;
+}
+
+/* Each item */
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+.cart-item:hover {
+  transform: scale(1.01);
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #1f2937;
+}
+.item-details p {
+  margin: 5px 0;
+  color: #4b5563;
+}
+
+/* Quantity controls */
+.item-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.item-actions button {
+  background-color: #e2e8f0;
+  padding: 5px 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.item-actions button:hover {
+  background-color: #cbd5e1;
+}
+.item-actions span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Subtotal */
+.subtotal {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Footer section */
+.cart-footer {
+  margin-top: 40px;
+  text-align: right;
+  border-top: 2px dashed #e2e8f0;
+  padding-top: 20px;
+}
+.cart-footer .total {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #111827;
+}
+.cart-footer button {
+  background-color: #0ea5e9;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cart-footer button:hover {
+  background-color: #0284c7;
+}
+
+/* Error message */
+.error {
+  margin-top: 15px;
+  color: #dc2626;
+  font-weight: 500;
+}
