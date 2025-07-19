@@ -7,7 +7,7 @@ export default function Register() {
   const [user, setUser] = useState({});
   const [error, setError] = useState();
   const Navigate = useNavigate()
-  const API_URL = import.meta.env.VITE_API_URL
+  const API_URL = 'https://merncafebackend-2.onrender.com';
   const handleSubmit = async () => {
     try {
       const url = `${API_URL}/api/users/register`;

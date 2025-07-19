@@ -9,7 +9,7 @@ export default function Cart() {
   const [orderValue, setOrderValue] = useState(0);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = 'https://merncafebackend-2.onrender.com';
 
   useEffect(() => {
     const total = cart.reduce((acc, item) => acc + item.qty * item.price, 0);

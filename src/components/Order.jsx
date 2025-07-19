@@ -4,7 +4,7 @@ import { AppContext } from "../App";
 import "./Order.css";
 
 export default function Order() {
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = 'https://merncafebackend-2.onrender.com';
   const { user } = useContext(AppContext);
   const [error, setError] = useState();
   const [orders, setOrders] = useState([]);

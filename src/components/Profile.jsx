@@ -9,7 +9,7 @@ export default function Profile() {
   const { user, setUser } = useContext(AppContext);
   const [form, setForm] = useState({});
   const [error, setError] = useState();
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = 'https://merncafebackend-2.onrender.com';
   const Navigate = useNavigate();
 
   const fetchProfile = async () => {

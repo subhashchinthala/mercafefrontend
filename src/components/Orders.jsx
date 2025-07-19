@@ -11,7 +11,7 @@ export default function Orders() {
   const [totalPages, setTotalPages] = useState(1);
   const [status, setStatus] = useState("");
   const { user } = useContext(AppContext);
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = 'https://merncafebackend-2.onrender.com';
 
   const fetchOrders = async () => {
     try {

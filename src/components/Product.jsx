@@ -4,7 +4,7 @@ import { AppContext } from "../App";
 import "./Product.css"; // 👈 Add this line
 
 export default function Product() {
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = 'https://merncafebackend-2.onrender.com';
   const [products, setProducts] = useState([]);
   const [error, setError] = useState();
   const { user, cart, setCart } = useContext(AppContext);

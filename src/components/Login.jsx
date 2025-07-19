@@ -8,7 +8,7 @@ export default function Login() {
   const { user, setUser } = useContext(AppContext);
   const [error, setError] = useState();
   const navigate = useNavigate();
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = 'https://merncafebackend-2.onrender.com';
 
   const handleSubmit = async () => {
     try {

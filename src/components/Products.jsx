@@ -18,8 +18,7 @@ export default function Products() {
   const [totalPages, setTotalPages] = useState(1);
   const [limit, setLimit] = useState(2);
   const [editId, setEditId] = useState();
-  const API_URL = import.meta.env.VITE_API_URL;
-
+  const API_URL = 'https://merncafebackend-2.onrender.com';
   const fetchProducts = async () => {
     try {
       setError("Loading...");
