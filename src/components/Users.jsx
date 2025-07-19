@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef, useContext } from "react";
 import axios from "axios";
-import './register.css';
+import "./Register.css";
+
 import { AppContext } from "../App";
 
 export default function Users() {
