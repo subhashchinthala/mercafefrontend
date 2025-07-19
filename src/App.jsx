@@ -1,6 +1,7 @@
 import { useState, createContext } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import "./components/Register.css";
 import Register from "./components/Register";
 import Product from "./components/Product";
 import Cart from "./components/Cart";
@@ -13,7 +14,7 @@ import Profile from "./components/Profile";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Products from "./components/Products";
-import "./components/register.css";
+import "./components/Register.css";
 
 
 
